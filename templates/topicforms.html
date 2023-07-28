@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic Forms</title>
+</head>
+<body>
+    <center>
+        <form action="" method="POST">
+            {% csrf_token %}
+
+                {{TFO.as_p}}
+
+                {{WFO.as_p}}
+
+                {{ARFO.as_p}}
+
+
+            <input type="submit" value="Submit Form">
+            
+        </form>
+    </center>
+</body>
+</html>
